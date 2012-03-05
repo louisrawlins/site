@@ -35,5 +35,6 @@ app.get('/bio', routes.bio);
 app.get('/resume', routes.resume);
 app.get('/contact', routes.contact);
 
-app.listen(3000);
+// Choose port 80 if we're on Joyent (`% export JOYENT=1` to set on server, `echo $JOYENT` to check)
+app.listen(process.env.JOYENT ? 80 : 3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
