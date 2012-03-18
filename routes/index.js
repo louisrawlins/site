@@ -7,10 +7,6 @@ exports.index = function(req, res){
   res.render('index', { title: 'Louis Rawlins' })
 };
 
-exports.bio = function(req, res){
-  res.render('bio', { title: 'Louis Rawlins, Bio' })
-};
-
 exports.resume = function(req, res){
   res.render('resume', { title: 'Louis Rawlins, Resume' })
 };

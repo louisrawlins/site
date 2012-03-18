@@ -31,14 +31,13 @@ app.configure('production', function(){
 // Routes to views
 
 app.get('/', routes.index);
-app.get('/bio', routes.bio);
 app.get('/resume', routes.resume);
 app.get('/contact', routes.contact);
 
 // Routes to redirects
 
-app.get('/blog', function(req, res){ res.redirect(process.env.JOYENT ? 'http://blog.louisrawlins.com' : 3001) });
-app.get('/portfolio', function(req, res){ res.redirect(process.env.JOYENT ? 'http://portfolio.louisrawlins.com' : 3002) });
+app.get('/blog', function(req, res){ res.redirect(process.env.JOYENT ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
+app.get('/portfolio', function(req, res){ res.redirect(process.env.JOYENT ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
 
 // Choose port 80 if we're on Joyent (`% export JOYENT=1` to set on server, `echo $JOYENT` to check)
 app.listen(process.env.JOYENT ? 80 : 3000);
