@@ -36,9 +36,8 @@ app.get('/contact', routes.contact);
 
 // Routes to redirects
 
-app.get('/blog', function(req, res){ res.redirect(process.env.JOYENT ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
-app.get('/portfolio', function(req, res){ res.redirect(process.env.JOYENT ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
+app.get('/blog', function(req, res){ res.redirect(process.env.NODEJITSU ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
+app.get('/portfolio', function(req, res){ res.redirect(process.env.NODEJITSU ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
 
-// Choose port 80 if we're on Joyent (`% export JOYENT=1` to set on server, `echo $JOYENT` to check)
-app.listen(process.env.JOYENT ? 80 : 3000);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+// Choose port 80 if we're on NODEJITSU (`% export NODEJITSU=1` to set on server, `echo $JOYENT` to check)
+app.listen(process.env.NODEJITSU ? 80 : 3000);
