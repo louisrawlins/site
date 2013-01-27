@@ -31,13 +31,12 @@ app.configure('production', function(){
 // Routes to views
 
 app.get('/', routes.index);
-app.get('/resume', routes.resume);
 app.get('/contact', routes.contact);
 
 // Routes to redirects
 
-app.get('/blog', function(req, res){ res.redirect(process.env.NODEJITSU ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
-app.get('/portfolio', function(req, res){ res.redirect(process.env.NODEJITSU ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
+app.get('/blog', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
+app.get('/portfolio', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
 
-// Choose port 80 if we're on NODEJITSU (`% export NODEJITSU=1` to set on server, `echo $JOYENT` to check)
-app.listen(process.env.NODEJITSU ? 80 : 3000);
+// Choose port 80 if we're on NODE_ENV (`% jitsu env set NODE_ENV production` to set on server)
+app.listen(process.env.NODE_ENV ? 80 : 3000);

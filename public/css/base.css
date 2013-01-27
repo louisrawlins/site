@@ -46,8 +46,8 @@ a { color: #aaa; text-decoration: none; }
 body {
   width: 650px;
   margin: 50px;
-  color: #333;
-  font-family: "Titillium Maps Light";
+  color: #444;
+  font-family: Georgia, Times, "Times New Roman", serif;
   line-height: 1.625em;
 }
 
@@ -61,8 +61,8 @@ address {
 
 address a {
   margin-right: 1.25em;
-  color: #333;
-  font-family: "Titillium Maps Light";
+  color: #444;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 header {
