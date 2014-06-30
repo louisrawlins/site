@@ -73,6 +73,11 @@ address {
   margin-left: 40px; 
 }
 
+#mainContent a { color: #999; text-decoration: none; }
+#mainContent a:hover { color: #aaa; text-decoration: underline; }
+footer a { color: #999; text-decoration: none; }
+footer a:hover { color: #aaa; text-decoration: underline; }
+
 address a {
   margin-right: 1.25em;
   color: #444;
