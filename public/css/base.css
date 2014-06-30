@@ -59,6 +59,20 @@ address {
 
 }
 
+#mainContent div {
+  margin-bottom: 17px;
+}
+
+#mainContent ul {
+  margin-top: -5px;
+}
+
+#mainContent ul li {
+  list-style: disc outside;
+  margin-bottom: 5px;
+  margin-left: 40px; 
+}
+
 address a {
   margin-right: 1.25em;
   color: #444;
