@@ -146,11 +146,11 @@ nav ul li a {
 }
 
 nav ul li.active,
+nav ul li.active a,
 nav ul dt.active,
 nav ul dt.active a {
   color: #ffb01f;
 }
-
 
 /*
 nav ul li dl dt:after {
