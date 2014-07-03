@@ -15,8 +15,8 @@ exports.contact = function(req, res){
   res.render('contact', { title: 'Contact - Louis Rawlins' })
 };
 
-exports.article = function(req, res){
-  res.render('article', { title: 'Articles - Louis Rawlins' })
+exports.articles = function(req, res){
+  res.render('articles', { title: 'Articles - Louis Rawlins' })
 };
 
 exports.leanLife = function(req, res){

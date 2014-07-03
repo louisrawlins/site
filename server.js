@@ -20,9 +20,6 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
-// Let's us render HTML to the browser.
-app.register('.html', require('jade'));
-
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
@@ -35,10 +32,10 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.get('/contact', routes.contact);
-app.get('/article', routes.article);
+app.get('/articles', routes.articles);
 
 // Routes to articles
-app.get('/article/lean-life', routes.leanLife);
+app.get('/articles/lean-life', routes.leanLife);
 
 // Routes to redirects
 

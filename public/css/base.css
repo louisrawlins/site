@@ -51,6 +51,12 @@ body {
   line-height: 1.625em;
 }
 
+hr {
+  margin: 1.625em -1px 0.8125em -1px;
+  border: none;
+  border-bottom: solid 1px #ddd;
+}
+
 h1 { 
   margin: 0 0 7.5px 0;
 }
@@ -184,11 +190,27 @@ article dl {
   margin: 0 0 2em 0;      
 }
 
-article h1,
-article strong {
+article h1 {
   display: block;
-  margin: 0 0 0.75em 0;
+  margin: 1em 0 0.125em 0;
   font-family: 'Titillium Maps Regular';
+}
+
+article h1 {
+  font-size: 1.6em;
+}
+
+article cite {
+  display: block;
+  border-top: solid 1px #eee;
+  margin: 0.5em 0 0.75em 0;
+  padding: 0.125em 0 0 1px;
+  font-size: 15px;
+}
+
+article cite span {
+  font-size: 13px;
+  color: #aaa;
 }
 
 article em {
