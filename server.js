@@ -9,7 +9,6 @@ var express = require('express')
 var app = module.exports = express.createServer();
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
@@ -29,18 +28,18 @@ app.configure('production', function(){
 });
 
 // Routes to views
-
 app.get('/', routes.index);
 app.get('/contact', routes.contact);
 app.get('/articles', routes.articles);
+app.get('/portfolio', routes.portfolio);
+app.get('/resume', routes.articles);
 
 // Routes to articles
 app.get('/articles/lean-life', routes.leanLife);
 
 // Routes to redirects
-
-app.get('/blog', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
-app.get('/portfolio', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
+// app.get('/blog', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
+// app.get('/portfolio', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
 
 // Choose port 80 if we're on NODE_ENV (`% jitsu env set NODE_ENV production` to set on server)
 app.listen(process.env.NODE_ENV ? 80 : 3000);

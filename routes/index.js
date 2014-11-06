@@ -11,6 +11,10 @@ exports.resume = function(req, res){
   res.render('resume', { title: 'Resume - Louis Rawlins' })
 };
 
+exports.portfolio = function(req, res){
+  res.render('portfolio', { title: 'Portfolio - Louis Rawlins' })
+};
+
 exports.contact = function(req, res){
   res.render('contact', { title: 'Contact - Louis Rawlins' })
 };
