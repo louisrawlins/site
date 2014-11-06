@@ -184,9 +184,8 @@ article {
 }
 
 article header,
-article p,
-article ul,
-article dl {
+article address,
+article p {
   margin: 0 0 2em 0;      
 }
 
