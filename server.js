@@ -32,7 +32,7 @@ app.get('/', routes.index);
 app.get('/contact', routes.contact);
 app.get('/articles', routes.articles);
 app.get('/portfolio', routes.portfolio);
-app.get('/resume', routes.articles);
+app.get('/resume', routes.resume);
 
 // Routes to articles
 app.get('/articles/lean-life', routes.leanLife);
