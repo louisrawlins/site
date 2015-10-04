@@ -42,5 +42,5 @@ app.get('/articles/lean-life', routes.leanLife);
 app.get('/blog', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://blog.louisrawlins.com' : 'http://localhost:3001') });
 app.get('/portfolio', function(req, res){ res.redirect(process.env.NODE_ENV ? 'http://portfolio.louisrawlins.com' : 'http://localhost:3002') });
 
-// Choose port 80 if we're on NODE_ENV (`% jitsu env set NODE_ENV production` to set on server)
-app.listen(process.env.NODE_ENV ? 80 : 3000);
+// Choose port 8080 if we're on NODE_ENV (`% export NODE_ENV=production` to set on server)
+app.listen(process.env.NODE_ENV ? 8080 : 3000);
