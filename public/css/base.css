@@ -148,6 +148,7 @@ nav ul li dl dd a {
 }
 
 nav ul li a {
+  text-decoration: none;
   color: #4d4f51;
 }
 
@@ -183,6 +184,13 @@ article {
 */
 }
 
+article section {
+  background: #f5f5f5;
+  margin-left: -2px;
+  margin-bottom: 1.5em;
+  padding: 10px;
+}
+
 article header,
 article p,
 article ul,
@@ -190,7 +198,11 @@ article dl {
   margin: 0 0 2em 0;      
 }
 
-article h1 {
+article h1,
+article strong {
+  color: #777;
+  font-size: 1.5em;
+  line-height: 1em;
   display: block;
   margin: 1em 0 0.125em 0;
   font-family: 'Titillium Maps Regular';
@@ -198,6 +210,11 @@ article h1 {
 
 article h1 {
   font-size: 1.6em;
+}
+
+article hr {
+  border: none;
+  border-top: solid 1px #f6f6f6;
 }
 
 article cite {
@@ -222,12 +239,114 @@ article section dl dd.example:before {
   vertical-align: 1px;
 }
 
+article section dl dd.info em {
+  width: 40px;
+  text-align: right;
+  float: left;
+}
+
+article section dl dd.info span {
+  display: block;
+  margin-left: 3em;
+}
+
 article section dl dd.example {
   margin-top: 4px;
 }
 
 article section dl dd.example a:hover {
   border-bottom:1px dotted #ffb01f;
+}
+
+article section img.thumb {
+  width: 100px;
+  margin: 10px 7.5px 5px 10px;
+  border: solid 2px #eee;
+}
+
+article section img.noBorder {
+  border: solid 2px transparent;
+}
+
+article section.gallery,
+article section dl.gallery {
+  padding: 10px;
+  background: #fefefe;
+  border: solid 1px #eee;
+  overflow: hidden;
+}
+
+article section dl.gallery dd {
+  margin-top: 5px;
+  padding: 5px;
+  background: #fafafa;
+}
+
+article section dl.gallery dd.description {
+  padding: 5px 8px;
+}
+
+article section dl.gallery dt.type {
+/*  padding-left: 20px; */
+/*  background: transparent url('../images/portfolio-arrow.png') 3px 5px no-repeat; */
+}
+
+article section dl.gallery dt.open {
+  background: transparent url('../images/portfolio-arrow.png') 3px -25px no-repeat;
+}
+
+article section.comment {
+  padding: 10px;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+
+article section.comment small {
+  display: block;
+  color: #222;
+  font-size: 12px;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+article section.comment dl {
+  margin: 5px;
+  padding: 5px 0 10px 0;
+  background: #eee;
+}
+
+article section.comment dl dd {
+  padding: 5px;
+  background: #eee;
+}
+
+article section dl dd small {
+  font-style: italic;
+  margin-left: 3px;
+  color: #bbb;
+}
+
+article section h1 {
+  padding: 5px;
+  padding-top: 7px;
+}
+
+article section.first {
+  margin-top: 2.5em;
+}
+
+article section section.comment {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+article section.comment p,
+article section.gallery p {
+  margin: 0.33em;
+}
+
+article section dl dd.detail {
+  margin: 0.5em 0 0.25em 0;
 }
 
 aside {

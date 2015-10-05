@@ -15,6 +15,10 @@ exports.contact = function(req, res){
   res.render('contact', { title: 'Contact - Louis Rawlins' })
 };
 
+exports.portfolio = function(req, res){
+  res.render('portfolio', { title: 'Portfolio - Louis Rawlins' })
+};
+
 exports.articles = function(req, res){
   res.render('articles', { title: 'Articles - Louis Rawlins' })
 };
