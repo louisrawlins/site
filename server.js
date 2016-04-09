@@ -45,4 +45,6 @@ app.get('/articles/lean-life', routes.leanLife);
 
 // Choose port 8080 if we're on NODE_ENV (`% export NODE_ENV=production` to set on server)
 // app.listen(process.env.NODE_ENV ? 8080 : 3000);
-app.listen(8080);
+app.listen(process.env.PORT || 3000, function() {
+  console.log('listening on', app.address().port);
+});
