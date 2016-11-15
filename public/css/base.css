@@ -1,44 +1,328 @@
-/*! normalize.css v5.0.0  | MIT License  | github.com/necolas/normalize.css   */
+/* normalize.css v5.0.0 - MIT License - github.com/necolas/normalize.css      */
 button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
 
-/* -- TAGS ------------------------------------------------------------------ */
+/* Font: Crimson Text ======================================================= */
 
 @font-face {
-  font-family: 'Titillium Maps Light';
-  src: url('fonts/titilliummaps29l-webfont.eot');
-  src: local('☺'), url('fonts/titilliummaps29l-webfont.woff') format('woff'), url('fonts/titilliummaps29l-webfont.ttf') format('truetype'), url('fonts/titilliummaps29l-webfont.svg#webfontSPqwxkGv') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'crimson_textbold';
+    src: url('fonts/crimson_text/crimsontext-bold-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Maps Regular';
-  src: url('fonts/titilliummaps29l001-webfont.eot');
-  src: local('☺'), url('fonts/titilliummaps29l001-webfont.woff') format('woff'), url('fonts/titilliummaps29l001-webfont.ttf') format('truetype'), url('fonts/titilliummaps29l001-webfont.svg#webfontgtuRmKpu') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'crimson_textbold_italic';
+    src: url('fonts/crimson_text/crimsontext-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Maps Bold';
-  src: url('fonts/titilliummaps29l002-webfont.eot');
-  src: local('☺'), url('fonts/titilliummaps29l002-webfont.woff') format('woff'), url('fonts/titilliummaps29l002-webfont.ttf') format('truetype'), url('fonts/titilliummaps29l002-webfont.svg#webfontdVVarxbA') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'crimson_textitalic';
+    src: url('fonts/crimson_text/crimsontext-italic-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Maps Black';
-  src: url('fonts/titilliummaps29l003-webfont.eot');
-  src: local('☺'), url('fonts/titilliummaps29l003-webfont.woff') format('woff'), url('fonts/titilliummaps29l003-webfont.ttf') format('truetype'), url('fonts/titilliummaps29l003-webfont.svg#webfontMRpDQMHd') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'crimson_textroman';
+    src: url('fonts/crimson_text/crimsontext-roman-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'crimson_textsemibold';
+    src: url('fonts/crimson_text/crimsontext-semibold-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crimson_textsemibold_italic';
+    src: url('fonts/crimson_text/crimsontext-semibolditalic-webfont.woff2') format('woff2'),
+         url('fonts/crimson_text/crimsontext-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Font: Eczar ============================================================== */
+
+@font-face {
+    font-family: 'eczarbold';
+    src: url('fonts/eczar/eczar-bold-webfont.woff2') format('woff2'),
+         url('fonts/eczar/eczar-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eczarextrabold';
+    src: url('fonts/eczar/eczar-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/eczar/eczar-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eczarmedium';
+    src: url('fonts/eczar/eczar-medium-webfont.woff2') format('woff2'),
+         url('fonts/eczar/eczar-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eczarregular';
+    src: url('fonts/eczar/eczar-regular-webfont.woff2') format('woff2'),
+         url('fonts/eczar/eczar-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eczarsemibold';
+    src: url('fonts/eczar/eczar-semibold-webfont.woff2') format('woff2'),
+         url('fonts/eczar/eczar-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Font: Merriweather ======================================================= */
+
+@font-face {
+    font-family: 'merriweatherblack';
+    src: url('fonts/merriweather/merriweather-black-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherblack_italic';
+    src: url('fonts/merriweather/merriweather-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherbold';
+    src: url('fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherbold_italic';
+    src: url('fonts/merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatheritalic';
+    src: url('fonts/merriweather/merriweather-italic-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherlight';
+    src: url('fonts/merriweather/merriweather-light-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherlight_italic';
+    src: url('fonts/merriweather/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('fonts/merriweather/merriweather-regular-webfont.woff2') format('woff2'),
+         url('fonts/merriweather/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Font: Open Sans ========================================================== */
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/open_sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('fonts/open_sans/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('fonts/open_sans/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('fonts/open_sans/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/open_sans/opensans-italic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/open_sans/opensans-light-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('fonts/open_sans/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/open_sans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('fonts/open_sans/opensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans/opensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Font: Open Sans Condensed ================================================ */
+
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('fonts/open_sans_condensed/opensans-condbold-webfont.woff2') format('woff2'),
+         url('fonts/open_sans_condensed/opensans-condbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('fonts/open_sans_condensed/opensans-condlight-webfont.woff2') format('woff2'),
+         url('fonts/open_sans_condensed/opensans-condlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansCnLtIt';
+    src: url('fonts/open_sans_condensed/opensans-condlightitalic-webfont.woff2') format('woff2'),
+         url('fonts/open_sans_condensed/opensans-condlightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* HTML Tags ================================================================ */
 
 body {
-  color: #444;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1em;
-  line-height: 1.33em;
-  margin: 1em 2em;
+    background: rgb(255,255,253);
+    color: #444;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1em;
+    line-height: 1.33em;
+    margin: 0 2em;
+}
+
+header h1 {
+
+    font-family: crimson_textroman;
+    font-size: 4em;
+    line-height: 0.9em;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    
+    
+    /*
+    font-family: eczarsemibold;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: -0.018em;
+    */
+
+    /*
+    font-family: open_sans_condensedbold;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: -0.024em;
+    */
+}
+
+nav {
+    border-top: #555 4px solid;
+    border-bottom: #555 4px solid;
+}
+
+section.main {
+    /* background: rgb(253,253,255); */
+}
+
+section, nav ul li {
+    font-family: open_sansregular;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+footer {
+    font-family: open_sansregular;
+    font-size: 1em;
 }
