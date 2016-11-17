@@ -271,6 +271,41 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
     font-style: normal;
 }
 
+/* Font: Adobe TypeKit - louisrawlins-site ================================== */
+/*
+/*      <script>
+/*        (function(d) {
+/*          var config = {
+/*            kitId: 'aui2sab',
+/*            scriptTimeout: 3000,
+/*            async: true
+/*          },
+/*          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+/*        })(document);
+/*      </script>
+/*
+/* * *
+
+/* Font: Emigre - Vendetta ================================================== */
+/*
+/* Vendetta Light           "vendetta-n3"; "vendetta" 300 normal
+/* Vendetta Light Italic    "vendetta-i3"; "vendetta" 300 italic
+/* Vendetta Medium          "vendetta-n5"; "vendetta" 500 normal
+/* Vendetta Medium Italic   "vendetta-i5"; "vendetta" 500 italic
+/* Vendetta Bold            "vendetta-n7"; "vendetta" 700 normal
+/*
+/* * *
+
+/* Font: Emigre - Alda ====================================================== */
+/*
+/* Alda Light               "alda-n3", "alda" 300 normal
+/* Alda Light Italic        "alda-i3", "alda" 300 italic
+/* Alda Regular             "alda-n4", "alda" 400 normal
+/* Alda Regular Italic      "alda-i4", "alda" 400 italic
+/* Alda Bold                "alda-n7", "alda" 700 normal
+/* Alda Bold Italic         "alda-i7", "alda" 700 italic
+/*
+/* * *
 
 /* HTML Tags and Classes ==================================================== */
 
@@ -285,12 +320,19 @@ body {
 
 header h1 {
 
+    font-family: "vendetta", Gadget;
+    font-size: 4em;
+    line-height: 0.9em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+
+    /*
     font-family: crimson_textroman;
     font-size: 4em;
     line-height: 0.9em;
     font-weight: 800;
     letter-spacing: -0.05em;
-
+    */
 
     /*
     font-family: eczarsemibold;
@@ -318,7 +360,7 @@ section h1 {
 }
 
 section, nav ul li {
-    font-family: open_sansregular;
+    font-family: "alda", open_sansregular;
     font-size: 1.4em;
     line-height: 1.4em;
 }
@@ -335,7 +377,7 @@ dl dt hr {
 }
 
 footer {
-    font-family: open_sansregular;
+    font-family: "alda", open_sansregular;
     font-size: 1em;
     margin-bottom: 2em;
 }
