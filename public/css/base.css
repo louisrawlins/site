@@ -359,6 +359,13 @@ section h1 {
     line-height: 1.1em;
 }
 
+section blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 0.8em;
+}
+
 section, nav ul li {
     font-family: "alda", open_sansregular;
     font-size: 1.4em;
