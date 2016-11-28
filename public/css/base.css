@@ -364,6 +364,10 @@ section article {
     max-width: 800px;
 }
 
+section article img {
+    width: 100%;
+}
+
 section h1 {
     font-size: 1.4em;
     line-height: 1.1em;
