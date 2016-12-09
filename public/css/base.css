@@ -288,24 +288,139 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 /* Font: Emigre - Vendetta ================================================== */
 /*
-/* Vendetta Light           "vendetta-n3"; "vendetta" 300 normal
-/* Vendetta Light Italic    "vendetta-i3"; "vendetta" 300 italic
-/* Vendetta Medium          "vendetta-n5"; "vendetta" 500 normal
-/* Vendetta Medium Italic   "vendetta-i5"; "vendetta" 500 italic
-/* Vendetta Bold            "vendetta-n7"; "vendetta" 700 normal
+/* Vendetta Light               "vendetta" 300 normal
+/* Vendetta Light Italic        "vendetta" 300 italic
+/* Vendetta Medium              "vendetta" 500 normal
+/* Vendetta Medium Italic       "vendetta" 500 italic
+/* Vendetta Bold                "vendetta" 700 normal
 /*
 /* * *
 
 /* Font: Emigre - Alda ====================================================== */
 /*
-/* Alda Light               "alda-n3", "alda" 300 normal
-/* Alda Light Italic        "alda-i3", "alda" 300 italic
-/* Alda Regular             "alda-n4", "alda" 400 normal
-/* Alda Regular Italic      "alda-i4", "alda" 400 italic
-/* Alda Bold                "alda-n7", "alda" 700 normal
-/* Alda Bold Italic         "alda-i7", "alda" 700 italic
+/* Alda Light                   "alda" 300 normal
+/* Alda Light Italic            "alda" 300 italic
+/* Alda Regular                 "alda" 400 normal
+/* Alda Regular Italic          "alda" 400 italic
+/* Alda Bold                    "alda" 700 normal
+/* Alda Bold Italic             "alda" 700 italic
 /*
 /* * *
+
+/* Font: Emigre - Mrs Eaves ================================================= */
+/*
+/* Mrs Eaves Roman              "mrs-eaves" 400 normal  
+/* Mrs Eaves Italic             "mrs-eaves" 400 italic  
+/* Mrs Eaves Bold               "mrs-eaves" 700 normal  
+/* Mrs Eaves Bold Italic        "mrs-eaves" 700 italic  
+/*
+/* * *
+
+/* Font: Emigre - Mrs Eaves XL ============================================== */
+/*
+/* Mrs Eaves XL Regular         "mrs-eaves-xl-serif" 400 normal  
+/* Mrs Eaves XL Italic          "mrs-eaves-xl-serif" 400 italic  
+/* Mrs Eaves XL Bold            "mrs-eaves-xl-serif" 700 normal  
+/* Mrs Eaves XL Bold Italic     "mrs-eaves-xl-serif" 700 italic  
+/* Mrs Eaves XL Heavy           "mrs-eaves-xl-serif" 800 normal  
+/* Mrs Eaves XL Heavy Italic    "mrs-eaves-xl-serif" 800 italic  
+/*
+/* * *
+
+/* Font: Emigre - Mrs Eaves XL Narrow ======================================= */
+/*
+/* Mrs Eaves XL Narrow Regular  "mrs-eaves-xl-serif-narrow" 400 normal  
+/* Mrs Eaves XL Narrow Italic   "mrs-eaves-xl-serif-narrow" 400 italic  
+/* Mrs Eaves XL Narrow Bold     "mrs-eaves-xl-serif-narrow" 700 normal  
+/* Mrs Eaves XL Narr Bold Ital  "mrs-eaves-xl-serif-narrow" 700 italic  
+/* Mrs Eaves XL Narrow Heavy    "mrs-eaves-xl-serif-narrow" 800 normal  
+/* Mrs Eaves XL Narr Heavy Ital "mrs-eaves-xl-serif-narrow" 800 italic  
+/*
+/* * *
+
+
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+
+
+
+Thin    "mr-eaves-xl-sans"  100 normal  
+ 
+Thin Italic "mr-eaves-xl-sans"  100 italic  
+ 
+Light   "mr-eaves-xl-sans"  200 normal  
+ 
+Light Italic    "mr-eaves-xl-sans"  200 italic  
+ 
+Book    "mr-eaves-xl-sans"  300 normal  
+ 
+Book Italic "mr-eaves-xl-sans"  300 italic  
+ 
+Regular "mr-eaves-xl-sans"  400 normal  
+ 
+Italic  "mr-eaves-xl-sans"  400 italic  
+ 
+Bold    "mr-eaves-xl-sans"  700 normal  
+
+
+
+Thin    "mr-eaves-sans" 100 normal  
+ 
+Thin Italic "mr-eaves-sans" 100 italic  
+ 
+Light   "mr-eaves-sans" 200 normal  
+ 
+Light Italic    "mr-eaves-sans" 200 italic  
+ 
+Book    "mr-eaves-sans" 300 normal  
+ 
+Book Italic "mr-eaves-sans" 300 italic  
+ 
+Regular "mr-eaves-sans" 400 normal  
+ 
+Italic  "mr-eaves-sans" 400 italic  
+ 
+Bold    "mr-eaves-sans" 700 normal  
+ 
+Bold Italic "mr-eaves-sans" 700 italic  
+ 
+Heavy   "mr-eaves-sans" 800 normal  
+ 
+Heavy Italic    "mr-eaves-sans" 800 italic  
+
+
+
+Thin    "mr-eaves-modern"   100 normal  
+ 
+Thin Italic "mr-eaves-modern"   100 italic  
+ 
+Light   "mr-eaves-modern"   200 normal  
+ 
+Light Italic    "mr-eaves-modern"   200 italic  
+ 
+Book    "mr-eaves-modern"   300 normal  
+ 
+Book Italic "mr-eaves-modern"   300 italic  
+ 
+Regular "mr-eaves-modern"   400 normal  
+ 
+Italic  "mr-eaves-modern"   400 italic  
+ 
+Bold    "mr-eaves-modern"   700 normal  
+ 
+Bold Italic "mr-eaves-modern"   700 italic  
+ 
+Heavy   "mr-eaves-modern"   800 normal  
+ 
+Heavy Italic    "mr-eaves-modern"   800 italic  
+
+
 
 /* HTML Tags and Classes ==================================================== */
 
@@ -355,6 +470,32 @@ header h1 {
     */
 }
 
+header h1 a {
+    margin: -5px;
+    padding: 0;
+    text-decoration: none;
+    border-bottom: solid 2px #0000EE;
+}
+
+header h1 a:link {
+    color: #0000EE;
+    border-color: #0000EE;
+}
+
+header h1 a:visited {
+    color: #551A8B;
+    border-color: #551A8B;
+}
+
+header h1 a:hover {
+
+}
+
+header h1 a:active {
+    color: #EE0000;
+    border-color: #EE0000;
+}
+
 nav {
     border-top: solid 4px #555;
     border-bottom: solid 4px #555;
@@ -379,11 +520,17 @@ section blockquote {
 
     margin: 0;
     padding: 0;
-    font-family: "alda";
-    font-weight: 300;
+    color: #4a4a4a;
+    font-family: "mrs-eaves-xl-serif-narrow";
+    font-weight: 800;
     font-style: italic;
-    font-size: 0.65em;
+    font-size: 0.75em;
     line-height: 1.5em;
+}
+
+section blockquote span {
+    /* Let each verse sit in it's own line */
+    display:inline-block
 }
 
 section, nav ul li {
