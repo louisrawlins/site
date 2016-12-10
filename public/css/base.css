@@ -439,8 +439,11 @@ hr {
     border-bottom: solid 1px rgba(120,120,120,0.5);
 }
 
-header h1 {
+header {
+    max-width: 800px;
+}
 
+header h1 {
     font-family: "vendetta";
     font-size: 4em;
     font-weight: 500;
@@ -533,6 +536,33 @@ section blockquote span {
     display:inline-block
 }
 
+span.proper_noun {
+    /* Names, cities and groups, as well */
+    display:inline-block
+}
+
+aside {
+    font-size: 0.95em;
+    line-height: 1.25em;
+    
+    border-top: solid 4px #555;
+}
+
+aside p {
+    background: rgba(200,200,200,0.1);
+
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+}
+
+section .footnotes {
+    font-family: "alda", open_sansregular;
+    font-size: 1em;
+    margin-bottom: 2em;
+    
+    border-top: solid 4px #555;
+}
+
 section, nav ul li {
     font-family: "alda", open_sansregular;
     font-size: 1.4em;
@@ -548,12 +578,6 @@ dl.gallery a img {
 dl dt hr {
     border: none;
     border-bottom: solid 2px #777;
-}
-
-footer {
-    font-family: "alda", open_sansregular;
-    font-size: 1em;
-    margin-bottom: 2em;
 }
 
 
