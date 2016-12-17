@@ -427,7 +427,7 @@ Heavy Italic    "mr-eaves-modern"   800 italic
 body {
     background: rgb(254,254,253);
     color: #444;
-    font-family: "alda", Georgia, Times, "Times New Roman", serif;
+    font-family: "alda", Georgia, Times, "Times New Roman", georgia;
     font-weight: 300;
     font-size: 0.95em;
     line-height: 1.33em;
@@ -444,7 +444,7 @@ header {
 }
 
 header h1 {
-    font-family: "vendetta";
+    font-family: "vendetta", georgia;
     font-size: 4em;
     font-weight: 500;
     line-height: 0.9em;
@@ -524,7 +524,7 @@ section blockquote {
     margin: 0;
     padding: 0;
     color: #4a4a4a;
-    font-family: "mrs-eaves-xl-serif-narrow";
+    font-family: "mrs-eaves-xl-serif-narrow", georgia;
     font-weight: 800;
     font-style: italic;
     font-size: 0.75em;
@@ -556,15 +556,24 @@ aside p {
 }
 
 section .footnotes {
-    font-family: "alda", open_sansregular;
+    font-family: "alda", georgia;
     font-size: 1em;
-    margin-bottom: 2em;
     
     border-top: solid 4px #555;
 }
 
+section .footnotes dl {
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+}
+
+section .footnotes dl dd {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
 section, nav ul li {
-    font-family: "alda", open_sansregular;
+    font-family: "alda", georgia;
     font-size: 1.4em;
     line-height: 1.4em;
 }
