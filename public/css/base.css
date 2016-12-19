@@ -427,7 +427,7 @@ Heavy Italic    "mr-eaves-modern"   800 italic
 body {
     background: rgb(254,254,253);
     color: #444;
-    font-family: "alda", Georgia, Times, "Times New Roman", georgia;
+    font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 300;
     font-size: 0.95em;
     line-height: 1.33em;
@@ -444,7 +444,6 @@ header {
 }
 
 header h1 {
-    font-family: "vendetta", georgia;
     font-size: 4em;
     font-weight: 500;
     line-height: 0.9em;
@@ -473,21 +472,20 @@ header h1 {
     */
 }
 
-header h1 a {
+header h1 a img {
+    max-width: 400px;
+
     margin: -5px;
     padding: 0;
     text-decoration: none;
-    border-bottom: solid 2px #0000EE;
 }
 
 header h1 a:link {
     color: #0000EE;
-    border-color: #0000EE;
 }
 
 header h1 a:visited {
     color: #551A8B;
-    border-color: #551A8B;
 }
 
 header h1 a:hover {
@@ -497,6 +495,21 @@ header h1 a:hover {
 header h1 a:active {
     color: #EE0000;
     border-color: #EE0000;
+}
+
+address {
+    margin: 11px 0 -10px 0;
+}
+
+address a {
+    margin: 0;
+    padding: 0;
+
+    max-width: 260px;
+}
+
+address a img {
+    max-width: 260px;
 }
 
 nav {
@@ -524,7 +537,6 @@ section blockquote {
     margin: 0;
     padding: 0;
     color: #4a4a4a;
-    font-family: "mrs-eaves-xl-serif-narrow", georgia;
     font-weight: 800;
     font-style: italic;
     font-size: 0.75em;
@@ -556,7 +568,6 @@ aside p {
 }
 
 section .footnotes {
-    font-family: "alda", georgia;
     font-size: 1em;
     
     border-top: solid 4px #555;
@@ -573,7 +584,6 @@ section .footnotes dl dd {
 }
 
 section, nav ul li {
-    font-family: "alda", georgia;
     font-size: 1.4em;
     line-height: 1.4em;
 }
