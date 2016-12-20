@@ -12,6 +12,32 @@ body {
     margin: 0 2em 2em 2em;
 }
 
+a:link {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:active {
+    color: #EE0000;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #AA00AA;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: #AA00AA;
+    text-decoration: underline;
+}
+
 header {
     max-width: 800px;
 }
@@ -31,8 +57,18 @@ nav ul {
     margin-bottom: 10px;
 }
 
+article {
+    max-width: 800px;
+}
+
 article header h1 {
     margin-bottom: 0;
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+article header img {
+    width: 100%;
 }
 
 article header p {
@@ -78,31 +114,7 @@ article p sup a {
 
 
 
-a:link {
-    color: #0000EE;
-    text-decoration: none;
-}
 
-a:hover {
-    color: #0000EE;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-a:active {
-    color: #EE0000;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #AA00AA;
-    text-decoration: none;
-}
-
-a:visited:hover {
-    color: #AA00AA;
-    text-decoration: underline;
-}
 
 
 
@@ -122,18 +134,6 @@ address a img {
 }
 
 
-section article {
-    max-width: 800px;
-}
-
-section article img {
-    width: 100%;
-}
-
-section h1 {
-    font-size: 2em;
-    line-height: 1.1em;
-}
 
 
 
