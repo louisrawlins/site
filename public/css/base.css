@@ -200,32 +200,38 @@ address a img {
 
 /* Gallery ================================================================== */
 
-dl.gallery a img {
+section.gallery {
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+section.gallery h1 {
+    margin-left: 5px;
+    font-size: 1.33em;
+    line-height: 1.1em;
+}
+
+section.gallery dl {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+section.gallery dl dd a img {
     max-height: 120px;
-    margin: 0.5em 1em 0.5em 0;
+    margin: 0.5em 1em 0.4em 0;
     border: solid 1px rgba(120,120,120,0.5);
 }
 
-dl dt hr {
-    border: none;
-    border-bottom: solid 2px #777;
+section.gallery dl dt {
+    font-size: 1.25em;
+    margin-left: 6px;
 }
 
-section dl.gallery {
-    margin: 0.5em 0;
-
-}
-
-section dl.gallery dt {
-    border-bottom: solid 2px #7a7a7a;
-
-}
-
-section dl.gallery dd {
+section.gallery dl dd {
     background: rgba(200,200,200,0.1);
 
     margin: 0.5em 0;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 0.5em 0 0.5em;
 }
 
 
