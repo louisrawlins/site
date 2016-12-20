@@ -41,23 +41,39 @@ header h1 a img {
     padding: 0;
 }
 
-a:link {
-    color: #0000EE;
+sup a {
+    background: rgba(200,200,200,0.1);
+    padding: 0 3px;
+
 }
 
-a:visited {
+a:link {
     color: #0000EE;
-    color: #551A8B;
+    text-decoration: none;
 }
 
 a:hover {
-
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 a:active {
-    color: #0000EE;
-    /* color: #EE0000; */
+    color: #EE0000;
+    text-decoration: underline;
 }
+
+a:visited {
+    color: #AA00AA;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color: #AA00AA;
+    text-decoration: underline;
+}
+
+
 
 address {
     margin: 11px 0 -10px 0;
