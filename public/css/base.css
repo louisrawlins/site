@@ -7,10 +7,13 @@ body {
     background: rgb(254,254,253);
     color: #444;
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: 300;
-    font-size: 0.95em;
-    line-height: 1.33em;
+    font-weight: 400;
+    font-size: 0.8em;
     margin: 0 2em;
+}
+
+article p {
+    line-height: 1.5em;
 }
 
 hr {
@@ -22,41 +25,20 @@ header {
     max-width: 800px;
 }
 
-header h1 {
-    font-size: 4em;
-    font-weight: 500;
-    line-height: 0.9em;
-    letter-spacing: -0.02em;
+article header h1 {
+    margin-bottom: 0;
+}
 
-    /*
-    font-family: crimson_textroman;
-    font-size: 4em;
-    line-height: 0.9em;
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    */
-
-    /*
-    font-family: eczarsemibold;
-    font-size: 4em;
-    font-weight: 400;
-    letter-spacing: -0.018em;
-    */
-
-    /*
-    font-family: open_sans_condensedbold;
-    font-size: 4em;
-    font-weight: 400;
-    letter-spacing: -0.024em;
-    */
+article header p {
+    margin: 0;
+    margin-left: 2px;
 }
 
 header h1 a img {
     max-width: 400px;
 
-    margin: -5px;
+    margin: 0 -5px -15px -5px;
     padding: 0;
-    text-decoration: none;
 }
 
 header h1 a:link {
@@ -73,7 +55,6 @@ header h1 a:hover {
 
 header h1 a:active {
     color: #EE0000;
-    border-color: #EE0000;
 }
 
 address {
@@ -105,7 +86,7 @@ section article img {
 }
 
 section h1 {
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 1.1em;
 }
 
@@ -115,11 +96,11 @@ section blockquote {
 
     margin: 0;
     padding: 0;
-    color: #4a4a4a;
+    color: #4f4f4f;
     font-weight: 800;
     font-style: italic;
-    font-size: 0.75em;
-    line-height: 1.5em;
+    font-size: 0.66em;
+
 }
 
 section blockquote span {
