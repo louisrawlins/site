@@ -48,6 +48,12 @@ header h1 a img {
     padding: 0;
 }
 
+section,
+nav ul li {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
 
 
 
@@ -121,6 +127,11 @@ article p sup a {
     padding: 0 3px;
 }
 
+article p strong.qed {
+    font-size: 1.66em;
+    font-style: normal;
+}
+
 aside {
     margin-top: 2em;
     font-size: 0.95em;
@@ -157,7 +168,6 @@ section .references dl dt {
 
 }
 
-
 section .references dl dd {
     background: rgba(200,200,200,0.1);
 
@@ -188,14 +198,7 @@ address a img {
 
 
 
-
-
-
-
-section, nav ul li {
-    font-size: 1.4em;
-    line-height: 1.4em;
-}
+/* Gallery ================================================================== */
 
 dl.gallery a img {
     max-height: 120px;
@@ -208,16 +211,31 @@ dl dt hr {
     border-bottom: solid 2px #777;
 }
 
+section dl.gallery {
+    margin: 0.5em 0;
+
+}
+
+section dl.gallery dt {
+    border-bottom: solid 2px #7a7a7a;
+
+}
+
+section dl.gallery dd {
+    background: rgba(200,200,200,0.1);
+
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+}
+
+
+
+
 /* Utility Classes ========================================================== */
 
 span.proper_noun {
     /* Names, cities and groups, as well */
     display:inline-block
-}
-
-em.qed {
-    font-size: 1.66em;
-    font-style: normal;
 }
 
 
