@@ -41,20 +41,22 @@ header h1 a img {
     padding: 0;
 }
 
-header h1 a:link {
+a:link {
     color: #0000EE;
 }
 
-header h1 a:visited {
+a:visited {
+    color: #0000EE;
     color: #551A8B;
 }
 
-header h1 a:hover {
+a:hover {
 
 }
 
-header h1 a:active {
-    color: #EE0000;
+a:active {
+    color: #0000EE;
+    /* color: #EE0000; */
 }
 
 address {
@@ -92,12 +94,8 @@ section h1 {
 
 section blockquote {
 
-    /* Mr Eaves, Mrs Eaves */
-
-    margin: 0;
-    padding: 0;
-    color: #4f4f4f;
-    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-style: italic;
     font-size: 0.66em;
 
@@ -149,7 +147,7 @@ section, nav ul li {
 }
 
 dl.gallery a img {
-    max-height: 100px;
+    max-height: 120px;
     margin: 0.5em 1em 0.5em 0;
     border: solid 1px rgba(120,120,120,0.5);
 }
