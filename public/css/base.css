@@ -9,7 +9,17 @@ body {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 400;
     font-size: 0.8em;
-    margin: 0 2em;
+    margin: 0 2em 2em 2em;
+}
+
+header {
+    max-width: 800px;
+}
+
+header h1 a img {
+    max-width: 400px;
+    margin: 0 -5px -15px -5px;
+    padding: 0;
 }
 
 nav {
@@ -21,34 +31,6 @@ nav ul {
     margin-bottom: 10px;
 }
 
-section blockquote {
-    margin-top: 2em;
-    margin-bottom: 1.66em;
-    padding: 0 7px 0.5em 7px;
-    font-style: italic;
-    font-size: 0.66em;
-    
-    border-top: solid 2px #7a7a7a;
-}
-
-section blockquote span {
-    /* Let each verse sit in it's own line */
-    display:inline-block
-}
-
-article p {
-    line-height: 1.5em;
-}
-
-hr {
-    border: none;
-    border-bottom: solid 1px rgba(120,120,120,0.5);
-}
-
-header {
-    max-width: 800px;
-}
-
 article header h1 {
     margin-bottom: 0;
 }
@@ -58,18 +40,43 @@ article header p {
     margin-left: 2px;
 }
 
-header h1 a img {
-    max-width: 400px;
-
-    margin: 0 -5px -15px -5px;
-    padding: 0;
+article section blockquote {
+    margin-top: 2em;
+    margin-bottom: 1.66em;
+    padding: 0 7px 0.5em 7px;
+    font-style: italic;
+    font-size: 0.66em;
+    
+    border-top: solid 2px #7a7a7a;
 }
 
-sup a {
+article section blockquote span {
+    /* Let each verse sit in it's own line */
+    display:inline-block
+}
+
+article p {
+    line-height: 1.5em;
+}
+
+article p small {
+    margin-right: 3px;
+}
+
+article p small a,
+article p sup a {
     background: rgba(200,200,200,0.1);
     padding: 0 3px;
-
 }
+
+
+
+
+
+
+
+
+
 
 a:link {
     color: #0000EE;
