@@ -133,56 +133,35 @@ article p sup a {
     padding: 0 3px;
 }
 
+/* TO DO:
+/* - use svg of a square                                                      */
 article p strong.qed {
     font-size: 1.66em;
     font-style: normal;
 }
 
-aside {
-    margin-top: 2em;
-    font-size: 0.95em;
-    line-height: 1.25em;
-}
-
-aside dl dt {
-    font-size: 0.95em;
-    font-weight: 300;
-    border-bottom: solid 2px #7a7a7a;
-}
-
-aside dl dd {
-    color: #5f5f5f;
-    background: rgba(200,200,200,0.1);
-
-    margin: 0.5em 0;
-    padding: 0.25em 0.5em;
-}
-
+aside,
 section .references {
     margin-top: 2em;
     color: #5f5f5f;
     font-size: 0.95em;
+    line-height: 1.25em;
 }
 
-section .references dl {
-    margin: 0.5em 0;
-
-}
-
+aside dl dt,
 section .references dl dt {
     border-bottom: solid 2px #7a7a7a;
-
 }
 
+aside dl dd,
 section .references dl dd {
-    background: rgba(200,200,200,0.1);
-
     margin: 0.5em 0;
     padding: 0.25em 0.5em;
+    background: rgba(200,200,200,0.1);
 }
 
-/* Redundant naming, make it different when updating layout. */
-
+/* TO DO:
+/* - fix redundant naming                                                     */
 section .references dl dt.type {
     border: none;
 }
