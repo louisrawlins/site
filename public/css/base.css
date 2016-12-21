@@ -84,7 +84,8 @@ nav ul li.active a {
 
 /* Article ================================================================== */
 
-article {
+article,
+section.gallery {
     max-width: 800px;
 }
 
