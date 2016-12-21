@@ -160,6 +160,10 @@ section .references dl dd {
     background: rgba(200,200,200,0.1);
 }
 
+section .references dl dd a {
+    font-style: italic;
+}
+
 /* TO DO:
 /* - fix redundant naming                                                     */
 section .references dl dt.type {
