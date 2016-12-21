@@ -181,6 +181,19 @@ section .references dl dd {
     padding: 0.25em 0.5em;
 }
 
+/* Redundant naming, make it different when updating layout. */
+
+section .references dl dt.type {
+    border: none;
+}
+
+section .references dl dd.info {
+    margin: 0 0 0.2em 1px;
+    padding: 0;
+    font-size: 0.95em;
+    background: none;
+}
+
 
 
 
@@ -205,35 +218,39 @@ address a img {
 
 
 /* Gallery ================================================================== */
+/* TO DO:
+/* - mobile-friendly images and previews
+/* - common formating for descriptions
+/* - reworded, terse descriptions                                             */
 
-section.gallery {
+.gallery {
     margin-top: 3em;
     margin-bottom: 0;
 }
 
-section.gallery h1 {
+.gallery h1 {
     margin-left: 5px;
     font-size: 1.33em;
     line-height: 1.1em;
 }
 
-section.gallery dl {
+.gallery dl {
     font-size: 0.95em;
     margin-bottom: 0.5em;
 }
 
-section.gallery dl dd a img {
+.gallery dl dd a img {
     max-height: 120px;
     margin: 0.5em 1em 0.4em 0;
     border: solid 1px rgba(120,120,120,0.5);
 }
 
-section.gallery dl dt {
+.gallery dl dt {
     font-size: 1.25em;
     margin-left: 6px;
 }
 
-section.gallery dl dd {
+.gallery dl dd {
     background: rgba(200,200,200,0.1);
 
     margin: 0.5em 0;
