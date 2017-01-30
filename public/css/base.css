@@ -171,7 +171,7 @@ section .references dl dt.type {
 }
 
 section .references dl dd.info {
-    margin: 0 0 0.2em 1px;
+    margin: 0 0 1em 1px;
     padding: 0;
     font-size: 0.95em;
     background: none;
