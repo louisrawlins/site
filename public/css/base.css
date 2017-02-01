@@ -116,8 +116,15 @@ article section blockquote {
 
 article section blockquote span {
     /* Let each verse sit in it's own line */
-    display:inline-block
+    display: inline-block;
 }
+
+article section blockquote cite {
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+
 
 article p {
     line-height: 1.5em;
