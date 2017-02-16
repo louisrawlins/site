@@ -1,1 +1,2 @@
-disallow: /samples/*
+user-agent: *
+disallow: /samples
