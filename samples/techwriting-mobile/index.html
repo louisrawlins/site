@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Louis Rawlins - Tech Writing - Health Care Innovation</title>
+        <style>
+        
+            /* normalize.css v5.0.0 - MIT License - github.com/necolas/normalize.css      */
+            button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
+
+            /* HTML Tags and Classes ==================================================== */
+
+            body {
+                background: rgb(254,254,253);
+                color: #444;
+                font-family: helvetica, arial, sans-serif;
+                font-weight: 400;
+                font-size: 0.85em;
+                margin: 0 2em 2em 2em;
+            }
+        
+            article {
+                max-width: 800px;
+            }
+        
+            article section {
+                margin: 20px 0 10px 0;
+                
+                overflow: hidden;
+            }
+        
+            article section h3 {
+                margin-top: 10px;
+                border-bottom: solid 1px #ddd;
+            }
+        
+            article section h3 span {
+                font-weight: normal;
+                font-size: 0.85em;
+            }
+
+            article section.interaction,
+            article section.call_out {
+                width: 90%;
+                max-width: 360px;
+                margin: 0 40px 0 0;
+                
+                float: left;
+            }
+        
+            article section.interaction {
+
+            }
+
+            article section.call_out {
+
+            }
+
+            article section.interaction h4,
+            article section.call_out h4 {
+                margin-bottom: 0;
+            }
+        
+            article section.interaction h4 {
+                color: #009ad9;
+            }
+        
+            article section.call_out h4 {
+                color: #3aa84b;
+            }
+        
+            article span.interaction {
+                font-weight: bold;
+                color: #009ad9;
+            }
+        
+            article span.call_out {
+                font-weight: bold;
+                color: #3aa84b;
+            }
+        
+            article section.interaction ol,
+            article section.call_out ol {
+                counter-reset: item;
+                padding-left: 5px;
+            }
+
+            article section.interaction ol li,
+            article section.call_out ol li {
+                display: block;
+            }
+
+            article section.interaction ol li::before,
+            article section.call_out ol li::before {
+                font-weight: bold;
+                content: counter(item) ". ";
+                counter-increment: item;
+            }
+
+            article section.interaction ol li::before {
+                color: #009ad9;
+            }
+        
+            article section.call_out ol li::before {
+                color: #3aa84b;
+            }
+
+            aside {
+                max-width: 360px;
+                margin: 0 -1px 20px -1px;
+                padding: 10px 20px;
+
+                background: khaki;
+            }
+        
+            strong.warning {
+                color: red;
+            }
+        
+            section img.full-width {
+                display: inline;
+                width: 100%;
+            }
+            
+            section img.half-width-left,
+            section img.half-width-right {
+                display: inline;
+                width: 50%;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                
+                float: left;
+            }
+            
+            section img.half-width-right {
+                margin-right: 0;
+                margin-left: 20px;
+
+                float: right;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>        
+            <article>
+                <header>
+                    <h1>Marauder's Map Annotated iPad Wireframes</h1>
+                    <p>
+                        <em>Art, copy and layout by Louis Rawlins</em>
+                    </p>
+                </header>
+                <section id="overview">
+                    <h3>Overview</h3>
+                    <p>
+                        This app provides an island of sanity for staff in the Emergency Department. With the app, they can locate one another, find patients and find equipment to make their day run smoothly and provide the best care for patients.
+                    </p>
+                    <p>
+                        Wireframes are meant as a conversation between the people that make a product and those that use the product. In this case, the designers, developers and managers as well as the nurses, doctors and staff in the Emergency Department.
+                    </p>
+                    <p>
+                        When reviewing these wireframes, know there may be inaccuracies and take that as an opportunity to start a dialogue about what you see. This document is meant as a guide.
+                    </p>
+                </section>
+                <section id="how_to_use">
+                    <h3>How to Use This Document</h3>
+                    <p>
+                        Below are two modes of interpreting the wireframes you see on the following pages.
+                    </p>
+
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <p>
+                            This section shows the actions a user can take with the app. It also shows what information may display from a back-end service.
+                        </p>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <p>
+                            This section shows any areas of interest like user interface elements that need modification, or known discrepancies between the wireframes, prototype and the visual design.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="table_of_contents">
+                    <h3>Table of Contents</h3>
+                    <strong>Screens</strong>
+                    <ol>
+                        <li><a href="#splash_screen">Splash Screen</a></li>
+                        <li><a href="#sign_in">Sign In</a></li>
+                        <li><a href="#sign_in-keyboard">Sign In, with Keyboard</a></li>
+                        <li><a href="#terms_and_conditions">Terms and Conditions</a></li>
+                        <li><a href="#sign_in-help">Sign In Help</a></li>
+                        <li><a href="#pod_view-staff_list">Pod View, Staff List</a></li>
+                        <li><a href="#pod_view-locked">Pod View, Locked</a></li>
+                        <li><a href="#pod_view-patient_list">Pod View, Patient List</a></li>
+                        <li><a href="#pod_view-patient_triage">Pod View, Patient Triage</a></li>
+                        <li><a href="#pod_view-patient_room">Pod View, Patient Room</a></li>
+                        <li><a href="#pod_view-search">Pod View, Search</a></li>
+                        <li><a href="#pod_view-search_filters">Pod View, Search Filters</a></li>
+                        <li><a href="#pod_view-settings">Pod View, Settings</a></li>
+                    </ol>
+                </section>
+
+                <section id="splash_screen">
+                    <h3>Screen 1: Splash Screen</h3>
+                    <a href="techwriting-mobile-splash_screen.png"><img class="half-width-left" src="techwriting-mobile-splash_screen.png" title="Splash Screen" alt="Splash Screen" /></a>
+                    <p>
+                        This screen orients the user to know they are using an app developed by Kaiser Permanente.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <p>
+                            <span>None</span>
+                        </p>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <p>
+                            <span>None</span>
+                        </p>
+                    </section>
+                </section>
+
+                <section id="sign_in">
+                    <h3>Screen 2: Sign In</h3>
+                    <a href="techwriting-mobile-sign_in.png"><img class="half-width-left" src="techwriting-mobile-sign_in.png" title="Sign In" alt="Sign In" /></a>
+                    <p>
+                        Clinical sign in screen for staff using National User ID (NUID) and password.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Enter NUID with keyboard</li>
+                            <li>Enter password with keyboard</li>
+                            <li>Sign in button to submit credentials; brings user to main screen</li>
+                            <li>Sign in help; brings user to <a href="#sign_in-help">Sign In Help</a></li>
+                            <li>Terms and Conditions; brings user to <a href="#terms_and_conditions">Terms and Conditions</a></li>
+                            <li>Privacy Statement; brings user to Privacy Statement</li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Fade animation from Sign In to main screen</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="sign_in-keyboard">
+                    <h3>Screen 3: Sign In, with Keyboard</h3>
+                    <a href="techwriting-mobile-sign_in-keyboard.png"><img class="half-width-left" src="techwriting-mobile-sign_in-keyboard.png" title="Sign In, with Keyboard" alt="Sign In, with Keyboard" /></a>
+                    <p>
+                        Clinical sign in screen for staff using NUID and password, showing keyboard.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Enter NUID with keyboard</li>
+                            <li>Enter password with keyboard</li>
+                            <li>Sign in button to submit credentials; brings user to main screen</li>
+                            <li>Sign in help; brings user to <a href="#sign_in-help">Sign In Help</a></li>
+                            <li>Dismiss keyboard</li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Fade animation from Sign In to main screen</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="terms_and_conditions">
+                    <h3>Screen 4: Terms and Conditions</h3>
+                    <a href="techwriting-mobile-terms_and_conditions.png"><img class="half-width-left" src="techwriting-mobile-terms_and_conditions.png" title="Terms and Conditions" alt="Terms and Conditions" /></a>
+                    <p>
+                        Legal agreement prior to use of the app. Can be reviewed from Settings screen.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Depending on entry point, sends user back to <a href="#sign_in">Sign In</a> or <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>Sends email of Terms and Conditions to user based on device-populated email (and free text entry)</li>
+                            <li>On first use of app, if declined, sends user back to <a href="#sign_in">Sign In</a></li>
+                            <li>On first use of app, if accepted, sends user to main screen</li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <p>
+                            <span>None</span>
+                        </p>
+                    </section>
+                </section>
+
+                <section id="sign_in-help">
+                    <h3>Screen 5: Sign In Help</h3>
+                    <a href="techwriting-mobile-sign_in-help.png"><img class="half-width-left" src="techwriting-mobile-sign_in-help.png" title="Sign In Help" alt="Sign In Help" /></a>
+                    <p>
+                        Help for password and user identification information.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Depending on entry point, sends user back to <a href="#sign_in">Sign In</a> or <a href="#pod_view-settings">Pod View, Settings</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <p>
+                            <span>None</span>
+                        </p>
+                    </section>
+                </section>
+
+                <section id="pod_view-staff_list">
+                    <h3>Screen 6: Pod View, Staff List</h3>
+                    <a href="techwriting-mobile-pod_view-staff_list.png"><img class="half-width-left" src="techwriting-mobile-pod_view-staff_list.png" title="Pod View, Staff List" alt="Pod View, Staff List" /></a>
+                    <p>
+                        A view of the Emergency Department, restricted to a single pod, showing waiting area and a list of staff within that pod.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search, filtered by Staff, Patients, or Equipment</li>
+                            <li>Filter for list view</li>
+                            <li>List view for all available staff as restricted by <span class="call_out">2</span> in Pod A; tapping a list entry displays a detail on the left-hand panel</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>User signed in to app; Faye Davis (nurse)</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Clean room to let nurses know which rooms are ready for new patients</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-locked">
+                    <h3>Screen 7: Pod View, Locked</h3>
+                    <a href="techwriting-mobile-pod_view-locked.png"><img class="half-width-left" src="techwriting-mobile-pod_view-locked.png" title="Pod View, Locked" alt="Pod View, Locked" /></a>
+                    <p>
+                        A security screen to allow nurse to lock app before setting down device.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Clears modal for "Screen Locked"</li>
+                            <li>Unlocks screen, provided credentials match currently signed in user</li>
+                            <li>Enter NUID with keyboard</li>
+                            <li>Enter password with keyboard</li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Tapping anywhere on the screen triggers "Screen Locked" modal to unlocking screen</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-patient_list">
+                    <h3>Screen 8: Pod View, Patient List</h3>
+                    <a href="techwriting-mobile-pod_view-patient_list.png"><img class="half-width-left" src="techwriting-mobile-pod_view-patient_list.png" title="Pod View, Patient List" alt="Pod View, Patient List" /></a>
+                    <p>
+                        A view of the Emergency Department, restricted to a single pod, showing waiting area and a list of patients within that pod.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search, filtered by Staff, Patients, or Equipment</li>
+                            <li>Filter for list view</li>
+                            <li>List view for all patients as restricted by <span class="call_out">2</span> in Pod A; tapping a list entry displays a patient detail</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>User signed in to app; Faye Davis (nurse)</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Clean room to let nurses know which rooms are ready for new patients</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-patient_triage">
+                    <h3>Screen 9: Pod View, Patient Triage</h3>
+                    <a href="techwriting-mobile-pod_view-patient_triage.png"><img class="half-width-left" src="techwriting-mobile-pod_view-patient_triage.png" title="Pod View, Patient Triage" alt="Pod View, Patient Triage" /></a>
+                    <p>
+                        A view of the Emergency Department, restricted to a single pod, showing waiting area and a list of patient within that pod. Shows the addition of a patient after triage to the waiting area.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search, filtered by Staff, Patients, or Equipment</li>
+                            <li>Filter for list view</li>
+                            <li>List view for all patients as restricted by <span class="call_out">2</span> in Pod A; tapping a list entry displays a patient detail</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>User signed in to app; Faye Davis (nurse)</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Clean room to let nurses know which rooms are ready for new patients</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room; shows new patient, Tim Anderson</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-patient_room">
+                    <h3>Screen 10: Pod View, Patient Room</h3>
+                    <a href="techwriting-mobile-pod_view-patient_room.png"><img class="half-width-left" src="techwriting-mobile-pod_view-patient_room.png" title="Pod View, Patient Room" alt="Pod View, Patient Room" /></a>
+                    <p>
+                        A view of the Emergency Department, restricted to a single pod, showing waiting area and a list of patient within that pod. Shows the addition of a patient from the waiting area to a clean room in the pod.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search, filtered by Staff, Patients, or Equipment</li>
+                            <li>Filter for list view</li>
+                            <li>List view for all patients as restricted by <span class="call_out">2</span> in Pod A; tapping a list entry displays a patient detail</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>User signed in to app; Faye Davis (nurse)</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Shows new patient in room, Tim Anderson</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-search">
+                    <h3>Screen 11: Pod View, Search</h3>
+                    <a href="techwriting-mobile-pod_view-search.png"><img class="half-width-left" src="techwriting-mobile-pod_view-search.png" title="Pod View, Search" alt="Pod View, Search" /></a>
+                    <p>
+                        Search for staff, patients and equipment within the Emergency Department.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search (filtered hidden under search area)</li>
+                            <li>Cancel search to return to main screen, like <a href="#pod_view-patient_room">Pod View, Patient Room</a></li>
+                            <li>List view of search results in entire Emergency Department; tapping a list entry displays detail (patients) or location (staff, equipment)</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Tug down list for filters</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Shows new patient in room, Tim Anderson</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-search_filters">
+                    <h3>Screen 12: Pod View, Search Filters</h3>
+                    <a href="techwriting-mobile-pod_view-search_filters.png"><img class="half-width-left" src="techwriting-mobile-pod_view-search_filters.png" title="Pod View, Search Filters" alt="Pod View, Search Filters" /></a>
+                    <p>
+                        Search for staff, patients and equipment within the Emergency Department. Showing filters for each type of item.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>As-you-type results for search (filtered hidden under search area)</li>
+                            <li>Cancel search to return to main screen, like <a href="#pod_view-patient_room">Pod View, Patient Room</a></li>
+                            <li>List view of search results in entire Emergency Department; tapping a list entry displays detail (patients) or location (staff, equipment)</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Search filters for Staff, Patients, or Equipment</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Shows new patient in room, Tim Anderson</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section id="pod_view-settings">
+                    <h3>Screen 13: Pod View, Settings</h3>
+                    <a href="techwriting-mobile-pod_view-settings.png"><img class="half-width-left" src="techwriting-mobile-pod_view-settings.png" title="Pod View, Settings" alt="Pod View, Settings" /></a>
+                    <p>
+                        Settings screen for user help and advanced functionality like "Ready" signal.
+                    </p>
+                    <section class="interaction">
+                        <h4>Interactions</h4>
+                        <ol>
+                            <li>Sends user back to Emergency Department view</li>
+                            <li>Sends user to <a href="#pod_view-settings">Pod View, Settings</a></li>
+                            <li>Send user to main screen, like <a href="#pod_view-patient_room">Pod View, Patient Room</a> (in this case, back to the equipment list)</li>
+                            <li>Sends user to Support screen, like <a href="#sign_in-help">Sign In Help</a></li>
+                            <li>Sends user to App Info screen</li>
+                            <li>Double-tapping in a non-active portion of the menu bar locks screen to display as <a href="#pod_view-locked">Pod View, Locked</a></li>
+                            <li>Signs out user from the app</li>
+                            <li>Signals "Ready" status</li>
+                        </ol>
+                    </section>
+                    <section class="call_out">
+                        <h4>Calls Outs</h4>
+                        <ol>
+                            <li>Settings screen</li>
+                            <li>Current location in map view; Pod A</li>
+                            <li>Dirty room to let nurses know which rooms need to be cleaned</li>
+                            <li>Patient in room; shows room number, patient name, sex, age, chief complaint; left-hand side shows status color along with time bar in 3 hour segments, filling from bottom-to-top for 12 total hours</li>
+                            <li>Shows new patient in room, Tim Anderson</li>
+                            <li>Waiting area for patients that have been triaged, but not in a room</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <footer>
+                    <p>###</p>
+                </footer>             
+            </article>
+        </section>
+    </body>
+</html>
+
+

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Louis Rawlins - Tech Writing - Banking</title>
+        <style>
+        
+            /* normalize.css v5.0.0 - MIT License - github.com/necolas/normalize.css      */
+            button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
+
+            /* HTML Tags and Classes ==================================================== */
+
+            body {
+                background: rgb(254,254,253);
+                color: #444;
+                font-family: helvetica, arial, sans-serif;
+                font-weight: 400;
+                font-size: 0.85em;
+                margin: 0 2em 2em 2em;
+            }
+        
+            article {
+                max-width: 800px;
+            }
+        
+            article section {
+                margin: 20px 0 10px 0;
+                
+                overflow: hidden;
+            }
+        
+            article section h3 {
+                margin-top: 10px;
+                border-bottom: solid 1px #ddd;
+            }
+        
+            article section h3 span {
+                font-weight: normal;
+                font-size: 0.85em;
+            }
+        
+            article dl dt {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+        
+            article dl dd {
+                margin-left: 20px;
+            }
+        
+            aside {
+                max-width: 360px;
+                margin: 0 -1px 20px -1px;
+                padding: 10px 20px;
+
+                background: khaki;
+            }
+        
+            strong.warning {
+                color: red;
+            }
+        
+            section img.full-width {
+                display: inline;
+                width: 100%;
+            }
+            
+            section img.half-width-left,
+            section img.half-width-right {
+                display: inline;
+                width: 50%;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                
+                float: left;
+            }
+            
+            section img.half-width-right {
+                margin-right: 0;
+                margin-left: 20px;
+
+                float: right;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section>
+            <article>
+                <header>
+                    <h1><a href="https://www.capitalone.com/identity-protection/swiftid/">SwiftID </a>for Small Business Banking</h1>
+                    <p>
+                        <em>Art, copy and layout by Louis Rawlins</em>
+                    </p>
+                </header>
+                <section id="purpose">
+                    <h3>Purpose</h3>
+                    <p>
+                        National Small Business is adopting SwiftID as the preferred form of Multifactor Authentication for our small business customers. Because the needs of small business customers can be complicated, we are ensuring that we plan and understand SwiftID authentication across mobile and web.
+                    </p>
+                    <p>
+                        An older authentication system that relies on personal Security Questions will be retired by July, 2016 making TouchID, SureSwipe, One-Time-PIN and SwiftID the alternative for Multifactor Authentication.
+                    </p>
+                    <p>
+                        SwiftID makes security seamless for Spark Business customers. National Small Business supports our customers with authentication that helps them feel secure no matter what.
+                    </p>
+                </section>
+                <section id="timing">
+                    <h3>Timing</h3>
+                    <p>
+                        Design work for SwiftID in Spark Business must be complete before June, 2016.
+                    </p>
+                </section>
+                
+                <section id="how_to_use">
+                    <h3>How to Use This Document</h3>
+                    <a href="techwriting-banking-overview.png"><img class="half-width-right" src="techwriting-banking-overview.png" title="Document Overview" alt="Document Overview" /></a>
+                    <p>
+                        This document is intended to map wireframe and comprehensive flows for Login on Spark Business for web and mobile. It describes what a small business owner may need to do, how we support them, and where there may be gaps between current and future experiences.
+                    </p>
+                    <p>
+                        We are combining NATIVE MOBILE and RESPONSIVE WEB to illustrate interactions between different channels. For Spark Busines, we can consider that each channel include the specific platforms outlined to the right.
+                    </p>
+                    <p>
+                        <strong class="warning">THIS DOCUMENT IS TO BE USED FOR REVIEW WITH DEVELOPMENT TEAM.</strong>
+                    </p>
+                </section>
+
+                <section id="table_of_contents">
+                    <h3>Table of Contents</h3>
+                    <strong>Background</strong>
+                    <ul>
+                        <li><a href="#swiftid-background">What Does SwiftID Offer Small Business Owners?</a></li>
+                    </ul>
+                    <strong>Scenarios</strong>
+                    <ol>
+                        <li><a href="#swiftid-scenario-01">Bill Pay on Mobile</a></li>
+                        <li><a href="#swiftid-scenario-02">Delegated Administration In-branch, at ATM, on Web or Mobile</a></li>
+                        <li><a href="#swiftid-scenario-03">Money Movement on Web and Mobile</a></li>
+                    </ol>
+                    <strong>Screen Flows</strong>
+                    <ol>
+                        <li><a href="#swiftid-screen_flow-01">Quickest Enrollment for SwiftID on Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-02">Thorough Enrollment for SwiftID on Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-03">Thorough Enrollment for SwiftID from Web to Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-04">Approval on Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-05">Approval, Sign In from Web to Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-06">Approval from Web to Mobile</a></li>
+                        <li><a href="#swiftid-screen_flow-07">Approval, Delegated Admin from Web to Mobile</a></li>
+                    </ol>
+                    <strong>Appendix</strong>
+                    <ul>
+                        <li><a href="#swiftid-appendix">Types of Authentication</a></li>
+                    </ul>
+                </section>
+
+                <section id="swiftid-background">
+                    <h3>What Does SwiftID Offer Small Business Owners?</h3>
+                    <p>
+                        SwiftID lets small business owners approve Spark Business account activity by responding to notifications on their mobile phone. By letting the bank know that they have possession of their phone and approve the activity, it helps our customers feel secure no matter what.
+                    </p>
+                </section>
+                
+                <section id="swiftid-scenario-01">
+                    <h3>Scenario 1: Bill Pay <span>(Channel: Mobile)</span></h3>
+                    <p>
+                        When a small business owner is at the office, they want to pay bills, so they can keep finances up-to-date and maintain good relationships with their business partners. Before the tranaction can complete, they have to approve or deny the activity to keep their account safe.
+                    </p>
+                    <a href="techwriting-banking-scenario-01.png"><img class="half-width-left" src="techwriting-banking-scenario-01.png" title="Bill Pay Scenario" alt="Bill Pay Scenario" /></a>
+                </section>
+
+                <aside>
+                    <p>
+                        <strong class="warning">NOT SwiftID!</strong>
+                    </p>
+                    <p>
+                        <strong>Use personal authentication like Password, TouchID, or SureSwipe.</strong>
+                    </p>
+                    <p>
+                        <strong>SwiftID and One-Time-PIN pose a risk by initiating and approving an action on same device. This can be used by anyone with access to the mobile device.</strong>
+                    </p>
+                </aside>
+
+                <section id="swiftid-scenario-02">
+                    <h3>Scenario 2: Delegated Administration <span>(Channel: In-Branch / ATM / Web / Mobile)</span></h3>
+                    <p>
+                        When a small business employee is at an ATM, they want to withdraw money, so they can purchase supplies at a local market. Before the tranaction can complete, the small business owner has to approve or deny the activity to keep their account safe.
+                    </p>
+                    <a href="techwriting-banking-scenario-02.png"><img class="half-width-left" src="techwriting-banking-scenario-02.png" title="Delegated Administration Scenario" alt="Delegated Administration Scenario" /></a>
+                </section>
+
+                <section id="swiftid-scenario-03">
+                    <h3>Scenario 3: Money Movement <span>(Channel: Web / Mobile)</span></h3>
+                    <p>
+                        When a small business owner is at their work laptop, they want to move money from their business checking to their business savings account, so they can have a financial buffer in lean times. Before the tranaction can complete, they have to approve or deny the activity to keep their account safe.
+                    </p>
+                    <a href="techwriting-banking-scenario-03.png"><img class="half-width-left" src="techwriting-banking-scenario-03.png" title="Money Movement Scenario" alt="Money Movement Scenario" /></a>
+                </section>
+
+                <section id="swiftid-screen_flow-01">
+                    <h3>Screen Flow 1: Quickest Enrollment <span>(Channel: Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-01.png"><img class="half-width-right" src="techwriting-banking-screen_flow-01.png" title="Quickest Enrollment on Mobile" alt="Quickest Enrollment on Mobile" /></a>
+                    <p>
+                        You are a new customer setting up your Spark Business account and you’re being prompted to set preferences for the app on your phone...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>Sign In - Login Mobile v0.0.1</li>
+                        <li>Enable Notifications - Login Mobile v0.0.1</li>
+                        <li>Enroll In SwiftID - Login Mobile v0.0.1</li>
+                        <li>Success - Login Mobile v0.0.1</li>
+                        <li>Video For SwiftID - Login Mobile v0.0.1</li>
+                        <li>No Thanks - Login Mobile v0.0.1</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-02">
+                    <h3>Screen Flow 2: Thorough Enrollment <span>(Channel: Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-02.png"><img class="half-width-right" src="techwriting-banking-screen_flow-02.png" title="Thorough Enrollment on Mobile" alt="Thorough Enrollment on Mobile" /></a>
+                    <p>
+                        You are a new customer setting up your Spark Business account and you’re being prompted to set preferences for the app on your phone...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>Sign In - Login Mobile v0.0.1</li>
+                        <li>Enable Notifications - Login Mobile v0.0.1</li>
+                        <li>Hold On - Login Mobile v0.0.1</li>
+                        <li>We Detect Activity - Login Mobile v0.0.1</li>
+                        <li>We Notify You  - Login Mobile v0.0.1</li>
+                        <li>Only If You Enroll - Login Mobile v0.0.1</li>
+                        <li>Then You Can Verify - Login Mobile v0.0.1</li>
+                        <li>Want To Enroll? - Login Mobile v0.0.1</li>
+                        <li>Success - Login Mobile v0.0.1</li>
+                        <li>Video For SwiftID - Login Mobile v0.0.1</li>
+                        <li>No Thanks - Login Mobile v0.0.1</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-03">
+                    <h3>Screen Flow 3: Thorough Enrollment <span>(Channel: Web to Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-03.png"><img class="half-width-right" src="techwriting-banking-screen_flow-03.png" title="Thorough Enrollment from Web to Mobile" alt="Thorough Enrollment from Web to Mobile" /></a>
+                    <p>
+                        You are a new customer setting up your Spark Business account and you’re being prompted to set preferences for the app on your phone...
+                    </p>
+
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>Sign In - Login Web v0.0.2</li>
+                        <li>Did You Know? - Login Web v0.0.2</li>
+                        <li>We Detect Activity - Login Web v0.0.2</li>
+                        <li>We Notify You - Login Web v0.0.2</li>
+                        <li>Only If You Enroll - Login Web v0.0.2</li>
+                        <li>Then You Can Verify - Login Web v0.0.2</li>
+                        <li>Want To Enroll? - Login Web v0.0.2</li>
+                        <li>Send To Phone - Login Web v0.0.2</li>
+                        <li>Wait - Login Web v0.0.2</li>
+                        <li>Sent to Phone (SMS) - Login Mobile v0.0.1</li>
+                        <li><a href="#swiftid-screen_flow-01">Screen Flow 1: Quickest Enrollment</a></li>
+                        <li>Success - Login Mobile v0.0.1</li>
+                        <li>Success - Login Web v0.0.2</li>
+                        <li>No Thanks - Login Mobile v0.0.1</li>
+                        <li>No Thanks - Login Web v0.0.2</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-04">
+                    <h3>Screen Flow 4: Approval <span>(Channel: Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-04.png"><img class="half-width-right" src="techwriting-banking-screen_flow-04.png" title="Approval on Mobile" alt="Approval on Mobile" /></a>
+                    <p>
+                        You are an existing Spark Business customer and have already enrolled in SwiftID. You are transferring a large sum from your checking account to savings on your phone...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>In-product - Transfer - Login Mobile v0.0.1</li>
+                        <li>Approval Required - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Mobile v0.0.1</li>
+                        <li>SwiftID - Login Mobile v0.0.1</li>
+                        <li>One-time-PIN - Login Mobile v0.0.1</li>
+                        <li>Password - Login Mobile v0.0.1</li>
+                        <li>TouchID - Login Mobile v0.0.1</li>
+                        <li>SureSwipe - Login Mobile v0.0.1</li>
+                        <li>One-time-PIN (SMS) - Login Mobile v0.0.1</li>
+                        <li>One-time-PIN (Email) - Login Mobile v0.0.1</li>
+                        <li>One-time-PIN (Enter) - Login Mobile v0.0.1</li>
+                        <li>Approved - Login Mobile v0.0.1</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-05">
+                    <h3>Screen Flow 5: Approval, Sign In <span>(Channel: Web to Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-05.png"><img class="half-width-right" src="techwriting-banking-screen_flow-05.png" title="Approval, Sign In from Web to Mobile" alt="Approval, Sign In from Web to Mobile" /></a>
+                    <p>
+                        You are an existing Spark Business customer and have already enrolled in SwiftID. You signing-in to the Spark Business website...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>Sign In - Login Web v0.0.2</li>
+                        <li>Approval Required - Login Web v0.0.2</li>
+                        <li>Approval Required - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Web v0.0.2</li>
+                        <li><a href="#swiftid-screen_flow-04">Screen Flow 4: Approval on Mobile</a></li>
+                        <li>Approved - Login Mobile v0.0.1</li>
+                        <li>Approved - Login Web v0.0.2</li>
+                        <li>In-Product - Accounts - Login Web v0.0.2</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-06">
+                    <h3>Screen Flow 6: Approval <span>(Channel: Web to Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-06.png"><img class="half-width-right" src="techwriting-banking-screen_flow-06.png" title="Approval from Web to Mobile" alt="Approval from Web to Mobile" /></a>
+                    <p>
+                        You are an existing Spark Business customer and have already enrolled in SwiftID. You are paying a bill on your office computer...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>In-Product - Pay Bill - Login Web v0.0.2</li>
+                        <li>Approval Required - Login Web v0.0.2</li>
+                        <li>Approval Required - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Web v0.0.2</li>
+                        <li><a href="#swiftid-screen_flow-04">Screen Flow 4: Approval on Mobile</a></li>
+                        <li>Approved - Login Mobile v0.0.1</li>
+                        <li>Approved - Login Web v0.0.2</li>
+                        <li>In-Product - Pay Bill - Login Web v0.0.2</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-screen_flow-07">
+                    <h3>Screen Flow 7: Approval, Delegated Admin <span>(Channel: Web to Mobile)</span></h3>
+                    <a href="techwriting-banking-screen_flow-07.png"><img class="half-width-right" src="techwriting-banking-screen_flow-07.png" title="Approval, Delegated Admin from Web to Mobile" alt="Approval, Delegated Admin from Web to Mobile" /></a>
+                    <p>
+                        You are an existing Spark Business customer and have already enrolled in SwiftID. Your accountant is setting up vendors for bill pay...
+                    </p>
+                    <strong>Wireframes</strong>
+                    <ol>
+                        <li>In-Product - Add Payee - Login Web v0.0.2</li>
+                        <li>Wait (Delegated Admin) - Login Web v0.0.2</li>
+                        <li>Approval Required - Login Mobile v0.0.1</li>
+                        <li>Denied - Login Mobile v0.0.1</li>
+                        <li>Denied (Delegated Admin) - Login Web v0.0.2</li>
+                        <li><a href="#swiftid-screen_flow-04">Screen Flow 4: Approval on Mobile</a></li>
+                        <li>Approved - Login Mobile v0.0.1</li>
+                        <li>Approved (Delegated Admin) - Login Web v0.0.2</li>
+                        <li>In-product - Add Payee - Login Web v0.0.2</li>
+                    </ol>
+                </section>
+
+                <section id="swiftid-appendix">
+                    <h3>Types of Authentication</h3>
+                    <a href="techwriting-banking-authorization_flow.png"><img class="half-width-right" src="techwriting-banking-authorization_flow.png" title="Authorization Flow" alt="Authorization Flow" /></a>
+                    <strong>Username and Password</strong>
+                    <ul>
+                        <li>A username is limited to 32 characters</li>
+                        <li>A password is limited to 20 characters</li>
+                        <li>A username or password can be valid, invalid, or expired and the server can be down</li>
+                        <li>A customer is locked out of the account after 5 invalid attempts</li>
+                        <li>A temporary password can help a customer get back into their account (retired soon)</li>
+                    </ul>
+                    <strong>Multifactor Authentication</strong>
+                    <ul>
+                        <li>A customer can be valid or invalid, and the server can be down</li>
+                        <li>A multifactor authentication response can be valid or invalid, and the server can be down</li>
+                        <li>A customer is locked out of the account after 5 invalid attempts</li>
+                    </ul>
+                    <strong>One-Time-PIN (OTP)</strong>
+                    <ul>
+                        <li>One-Time-PIN allows a maximum of 10 requests for a PIN every 24 hours</li>
+                        <li>A PIN can be valid, invalid, or expired and the server can be down</li>
+                        <li>A customer is locked out of the account after 5 invalid attempts</li>
+                        <li>The email or phone number for One-Time-PIN can be invalid</li>
+                    </ul>
+                </section>
+                <footer>
+                    <p>###</p>
+                </footer>             
+            </article>
+        </section>
+    </body>
+</html>
+
+
