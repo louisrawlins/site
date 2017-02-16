@@ -1,2 +1,5 @@
 user-agent: *
 disallow: /samples
+
+user-agent: AdsBot-Google
+disallow: /samples
