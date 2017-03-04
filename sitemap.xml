@@ -8,14 +8,34 @@
 
 <url>
   <loc>http://louisrawlins.com/</loc>
-  <changefreq>daily</changefreq>
+  <lastmod>2017-03-04T00:07:25+00:00</lastmod>
 </url>
 <url>
-  <loc>http://louisrawlins.com/resume</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://louisrawlins.com/portfolio/</loc>
+  <lastmod>2017-03-04T00:07:25+00:00</lastmod>
 </url>
 <url>
-  <loc>http://louisrawlins.com/contact</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://louisrawlins.com/writing/</loc>
+  <lastmod>2017-03-04T00:07:27+00:00</lastmod>
+</url>
+<url>
+  <loc>http://louisrawlins.com/services/</loc>
+  <lastmod>2017-03-04T00:07:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://louisrawlins.com/contact/</loc>
+  <lastmod>2017-03-04T00:07:25+00:00</lastmod>
+</url>
+<url>
+  <loc>http://louisrawlins.com/writing/articles/</loc>
+  <lastmod>2017-03-04T00:07:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://louisrawlins.com/writing/articles/time_and_patience/</loc>
+  <lastmod>2017-03-04T00:07:26+00:00</lastmod>
+</url>
+<url>
+  <loc>http://louisrawlins.com/writing/articles/confidence/</loc>
+  <lastmod>2017-03-04T00:07:26+00:00</lastmod>
 </url>
 </urlset>

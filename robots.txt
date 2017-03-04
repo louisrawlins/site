@@ -1,3 +1,5 @@
+sitemap: http://louisrawlins.com/sitemap.xml
+
 user-agent: *
 disallow: /samples
 
