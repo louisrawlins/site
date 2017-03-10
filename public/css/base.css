@@ -95,8 +95,53 @@ article header h1 {
     line-height: 1.1em;
 }
 
-article header img {
+article h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+article header img,
+article figure img {
     width: 100%;
+}
+
+article figure {
+    margin-top: 5px;
+}
+
+article figure img {
+    border: solid 2px #ccc;
+}
+
+article figure figcaption {
+    font-size: 0.85em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.25em;
+}
+
+article figure.full-width {
+    display: inline;
+    width: 100%;
+}
+
+article figure.half-width-left,
+article figure.half-width-right {
+    display: inline;
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    
+    float: left;
+}
+
+article figure.half-width-right {
+    margin-right: 0;
+    margin-left: 20px;
+
+    float: right;
 }
 
 article header p {
