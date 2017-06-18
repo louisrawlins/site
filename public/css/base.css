@@ -293,6 +293,79 @@ address a img {
 }
 
 
+#portfolio article {
+    max-width: 65em;
+    background: rgb(254,254,253);
+    color: #444;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.85em;
+    margin: 0 2em 2em 2em;
+}
+
+#portfolio article section {
+    margin: 20px 0 10px 0;
+    
+    overflow: hidden;
+}
+
+#portfolio article section strong {
+    margin-top: 10px;
+    font-size: 1.33em;
+}
+
+#portfolio article section h3 {
+    margin-top: 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+#portfolio article section h3 span {
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+#portfolio article dl dt {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#portfolio article dl dd {
+    margin-left: 20px;
+}
+
+#portfolio aside {
+    max-width: 360px;
+    margin: 0 -1px 20px -1px;
+    padding: 10px 20px;
+
+    background: khaki;
+}
+
+#portfolio strong.warning {
+    color: red;
+}
+
+#portfolio section img.full-width {
+    display: inline;
+    width: 100%;
+}
+
+#portfolio section img.half-width-left,
+#portfolio section img.half-width-right {
+    display: inline;
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+    float: left;
+}
+
+#portfolio section img.half-width-right {
+    margin-right: 0;
+    margin-left: 20px;
+
+    float: right;
+}        
 
 
 /* Utility Classes ========================================================== */
