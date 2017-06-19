@@ -2,6 +2,7 @@ sitemap: http://louisrawlins.com/sitemap.xml
 
 user-agent: *
 disallow: /samples
+disallow: /design
 
 user-agent: AdsBot-Google
 disallow: /samples
