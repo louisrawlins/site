@@ -304,6 +304,9 @@ address a img {
     padding: 0.25em 0.5em 0 0.5em;
 }
 
+#portfolio article img {
+    border: solid 1px #ddd;
+}
 
 #portfolio article {
     max-width: 65em;
@@ -318,7 +321,8 @@ address a img {
 #portfolio article#spark_business,
 #portfolio article#firefly,
 #portfolio article#hr_portal,
-#portfolio article#bonfire_school {
+#portfolio article#bonfire_school,
+#portfolio article#graphic_design {
     margin: 2.5em 0;
     padding: 1em 2em;
     background: rgba(200,200,200,0.1);
@@ -384,14 +388,14 @@ address a img {
     color: red;
 }
 
-#portfolio section img.full-width {
+#portfolio section .full-width {
     display: inline;
     width: 100%;
 }
 
-#portfolio section img.half-width-left,
-#portfolio section img.half-width-right,
-#portfolio section img.series {
+#portfolio section .half-width-left,
+#portfolio section .half-width-right,
+#portfolio section .series {
     display: inline;
     width: 50%;
     margin-right: 20px;
@@ -400,21 +404,42 @@ address a img {
     float: left;
 }
 
-#portfolio section img.half-width-right {
+#portfolio section .half-width-right {
     margin-right: 0;
     margin-left: 20px;
 
     float: right;
 }        
 
-#portfolio section img.series {
+#portfolio section .series {
     display: inline-block;
-    width: 40%;
-    margin-right: 15px;
+    width: 30%;
+    margin-right: 20px;
     margin-bottom: 15px;
 }
 
+#portfolio section .third-col {
+    display: inline-block;
+    width: 33.333%;
+    margin-top: 0;
+    float: left;
+}
 
+#portfolio section .third-col img {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#portfolio section .first img {
+    margin-left: 0;
+    margin-right: 10%;
+}
+
+#portfolio section .last img {
+    margin-left: 10%;
+    margin-right: 0;
+}
 
 /* Utility Classes ========================================================== */
 
@@ -427,7 +452,7 @@ span.proper_noun {
 
 
 /* Larger than a tablet, we suppose. */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
 
     body {
 
@@ -461,11 +486,20 @@ span.proper_noun {
 
     }
 
-    #portfolio section img.series {
-        display: inline-block;
-        width: 30%;
-        margin-right: 20px;
-        margin-bottom: 10px;
+    #portfolio section .third-col img {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    #portfolio section .first img {
+        margin-left: 0;
+        margin-right: 5%;
+    }
+
+    #portfolio section .last img {
+        margin-left: 5%;
+        margin-right: 0;
     }
 
 }
