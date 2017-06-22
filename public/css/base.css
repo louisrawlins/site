@@ -331,6 +331,7 @@ address a img {
 
 #portfolio article section {
     margin: 15px 0 5px 0;
+    padding: 2px;
     
     overflow: hidden;
 }
@@ -431,15 +432,33 @@ address a img {
     margin-right: 5%;
 }
 
-#portfolio section .first img {
+#portfolio section .third-col .half {
+    width: 50%;
+    margin-top: 0;
+    float: left;
+}
+
+#portfolio section .third-col .half img {
+    display: inline-block;
+    width: 90%;
+
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#portfolio section .first img,
+#portfolio section .first .half img {
     margin-left: 0;
     margin-right: 10%;
 }
 
-#portfolio section .last img {
+#portfolio section .last img,
+#portfolio section .last .half img {
     margin-left: 10%;
     margin-right: 0;
 }
+
+
 
 /* Utility Classes ========================================================== */
 
