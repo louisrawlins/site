@@ -195,10 +195,16 @@ article p strong.qed {
 
 aside,
 section .references {
+    max-width: 800px;
     margin-top: 2em;
     color: #5f5f5f;
     font-size: 0.95em;
     line-height: 1.25em;
+}
+
+section .references p strong {
+    display: block;
+    border-bottom: solid 4px rgba(200,200,200,0.1);
 }
 
 aside dl dt,
